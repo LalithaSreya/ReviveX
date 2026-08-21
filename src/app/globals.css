@@ -24,3 +24,9 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Global High-Contrast Placeholders Visibility */
+input::placeholder, textarea::placeholder {
+  color: #64748b !important; /* Tailwind slate-500 */
+  opacity: 1 !important;     /* Override browser opacity reductions */
+}
