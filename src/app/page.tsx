@@ -148,39 +148,39 @@ export default function HomePage() {
               description="Secure recycling of telecom gear, computer hardware, servers, and heavy logic boards with active data sanitization."
               icon={<Cpu className="h-6 w-6 text-emerald-700" />}
               className="md:col-span-2"
-              header={<div className="h-28 bg-emerald-50 rounded-xl flex items-center justify-center border border-emerald-900/5"><Cpu className="h-12 w-12 text-emerald-700 opacity-20" /></div>}
+              header={<img src="/images/e_waste_management.png" alt="E-Waste Management" className="h-28 w-full object-cover rounded-xl border border-emerald-950/5" />}
             />
             <BentoGridItem
               title="Scrap Collection"
               description="Scheduled collection of structural scrap, copper cabling, industrial aluminium, and fabrication scrap."
               icon={<Layers className="h-6 w-6 text-teal-600" />}
-              header={<div className="h-28 bg-teal-50 rounded-xl flex items-center justify-center border border-teal-900/5"><Layers className="h-12 w-12 text-teal-600 opacity-20" /></div>}
+              header={<img src="/images/scrap_collection.png" alt="Scrap Collection" className="h-28 w-full object-cover rounded-xl border border-emerald-950/5" />}
             />
             <BentoGridItem
               title="Asset Recovery"
               description="Auditing and recovery of industrial plant parts, turbines, and reusable assets to optimize depreciation."
               icon={<Shield className="h-6 w-6 text-cyan-600" />}
-              header={<div className="h-28 bg-cyan-50 rounded-xl flex items-center justify-center border border-cyan-900/5"><Shield className="h-12 w-12 text-cyan-600 opacity-20" /></div>}
+              header={<img src="/images/asset_recovery.png" alt="Asset Recovery" className="h-28 w-full object-cover rounded-xl border border-emerald-950/5" />}
             />
             <BentoGridItem
               title="Refurbishment"
               description="Diagnostic overhaul and testing of networking hardware, transformers, and industrial switches back to OEM standards."
               icon={<Wrench className="h-6 w-6 text-sky-600" />}
               className="md:col-span-2"
-              header={<div className="h-28 bg-sky-50 rounded-xl flex items-center justify-center border border-sky-900/5"><Wrench className="h-12 w-12 text-sky-600 opacity-20" /></div>}
+              header={<img src="/images/refurbishment.png" alt="Refurbishment" className="h-28 w-full object-cover rounded-xl border border-emerald-950/5" />}
             />
             <BentoGridItem
               title="Spare Parts Supply"
               description="Vast marketplace of verified recovered spares, reducing standard procurement costs by up to 60%."
               icon={<Repeat className="h-6 w-6 text-lime-600" />}
-              header={<div className="h-28 bg-lime-50 rounded-xl flex items-center justify-center border border-lime-900/5"><Repeat className="h-12 w-12 text-lime-600 opacity-20" /></div>}
+              header={<img src="/images/spare_parts.png" alt="Spare Parts Supply" className="h-28 w-full object-cover rounded-xl border border-emerald-950/5" />}
             />
             <BentoGridItem
               title="Sustainability Reporting"
               description="Automated carbon accounting, ESG compliance documentation, and green recycling certifications."
               icon={<FileBarChart className="h-6 w-6 text-emerald-800" />}
               className="md:col-span-2"
-              header={<div className="h-28 bg-emerald-50/50 rounded-xl flex items-center justify-center border border-emerald-900/5"><FileBarChart className="h-12 w-12 text-emerald-800 opacity-20" /></div>}
+              header={<img src="/images/sustainability_reporting.png" alt="Sustainability Reporting" className="h-28 w-full object-cover rounded-xl border border-emerald-950/5" />}
             />
           </BentoGrid>
         </div>
