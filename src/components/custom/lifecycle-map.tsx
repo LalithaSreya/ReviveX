@@ -75,14 +75,14 @@ export const MaterialLifecycleMap = () => {
   }, [])
 
   // Calculate coordinates on a circle of radius R
-  const radius = 140
-  const width = 360
-  const height = 360
+  const radius = 95
+  const width = 260
+  const height = 260
   const cx = width / 2
   const cy = height / 2
 
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center gap-12 max-w-5xl mx-auto p-6 bg-slate-50/40 rounded-3xl border border-emerald-950/5 shadow-sm">
+    <div className="flex flex-col items-center justify-center gap-6 max-w-sm w-full p-5 bg-white border border-emerald-950/5 rounded-3xl shadow-sm">
       {/* SVG Interactive Wheel */}
       <div className="relative" style={{ width, height }}>
         {/* Connection line circle */}
@@ -121,14 +121,14 @@ export const MaterialLifecycleMap = () => {
               onClick={() => setActiveIndex(index)}
             >
               <div
-                className={`relative flex items-center justify-center h-14 w-14 rounded-full border transition-all duration-300 ${
+                className={`relative flex items-center justify-center h-10 w-10 rounded-full border transition-all duration-300 ${
                   isActive
                     ? `bg-emerald-900 border-emerald-900 text-white shadow-lg shadow-emerald-900/20 scale-110`
                     : `bg-white border-slate-200 hover:border-emerald-700/30 ${stage.color} hover:scale-105`
                 }`}
               >
-                <Icon className="h-6 w-6" />
-                <span className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 text-[10px] font-semibold tracking-wider text-emerald-950 uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap bg-white px-2 py-0.5 rounded shadow-sm">
+                <Icon className="h-4.5 w-4.5" />
+                <span className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 text-[9px] font-semibold tracking-wider text-emerald-950 uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap bg-white px-2 py-0.5 rounded shadow-sm z-20">
                   {stage.name}
                 </span>
               </div>
@@ -137,9 +137,9 @@ export const MaterialLifecycleMap = () => {
         })}
 
         {/* Center Display */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-8 pointer-events-none">
-          <div className="h-32 w-32 rounded-full bg-white flex flex-col items-center justify-center border border-emerald-950/5 shadow-sm p-4">
-            <span className="text-[10px] font-semibold text-emerald-800/60 uppercase tracking-widest">Active Step</span>
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4 pointer-events-none">
+          <div className="h-24 w-24 rounded-full bg-white flex flex-col items-center justify-center border border-emerald-950/5 shadow-sm p-3">
+            <span className="text-[8px] font-bold text-emerald-800/60 uppercase tracking-widest">Active Step</span>
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeIndex}
@@ -149,10 +149,10 @@ export const MaterialLifecycleMap = () => {
                 transition={{ duration: 0.2 }}
                 className="flex flex-col items-center"
               >
-                <span className="text-sm font-bold text-emerald-950 mt-1 text-center leading-tight">
+                <span className="text-xs font-bold text-emerald-950 mt-0.5 text-center leading-tight">
                   {STAGES[activeIndex].name}
                 </span>
-                <div className={`mt-2 h-1 w-8 rounded-full ${STAGES[activeIndex].color.replace('text', 'bg')}`} />
+                <div className={`mt-1 h-0.5 w-6 rounded-full ${STAGES[activeIndex].color.replace('text', 'bg')}`} />
               </motion.div>
             </AnimatePresence>
           </div>
@@ -160,26 +160,26 @@ export const MaterialLifecycleMap = () => {
       </div>
 
       {/* Description Panel */}
-      <div className="flex-1 max-w-md">
+      <div className="w-full">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeIndex}
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -20 }}
-            transition={{ duration: 0.3 }}
-            className={`p-8 rounded-3xl border ${STAGES[activeIndex].borderCol} ${STAGES[activeIndex].bgLight} shadow-sm`}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.2 }}
+            className={`p-5 rounded-2xl border ${STAGES[activeIndex].borderCol} ${STAGES[activeIndex].bgLight} shadow-sm`}
           >
             <div className="flex items-center space-x-3">
-              <div className={`p-2.5 rounded-xl bg-white shadow-sm border ${STAGES[activeIndex].borderCol}`}>
-                {React.createElement(STAGES[activeIndex].icon, { className: `h-6 w-6 ${STAGES[activeIndex].color}` })}
+              <div className={`p-2 rounded-xl bg-white shadow-sm border ${STAGES[activeIndex].borderCol}`}>
+                {React.createElement(STAGES[activeIndex].icon, { className: `h-4.5 w-4.5 ${STAGES[activeIndex].color}` })}
               </div>
               <div>
-                <span className="text-[10px] font-bold text-emerald-800/60 uppercase tracking-widest">Ecosystem Phase</span>
-                <h3 className="text-xl font-bold text-emerald-950 leading-none mt-0.5">{STAGES[activeIndex].name}</h3>
+                <span className="text-[9px] font-bold text-emerald-800/60 uppercase tracking-widest">Ecosystem Phase</span>
+                <h3 className="text-base font-bold text-emerald-950 leading-none mt-0.5">{STAGES[activeIndex].name}</h3>
               </div>
             </div>
-            <p className="mt-4 text-emerald-900/80 leading-relaxed text-sm">
+            <p className="mt-3 text-emerald-900/80 leading-relaxed text-xs">
               {STAGES[activeIndex].description}
             </p>
           </motion.div>
