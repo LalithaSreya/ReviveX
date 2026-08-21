@@ -68,7 +68,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
             <Leaf className="h-6 w-6 text-emerald-700" />
-            <span className="text-xl font-bold tracking-tight text-emerald-950">Revive<span className="text-emerald-700">X</span></span>
+            <span className="text-xl font-bold tracking-tight text-emerald-950">Revive<span className="text-emerald-700">X</span> <span className="text-[10px] text-slate-400 font-semibold align-middle ml-1.5 uppercase tracking-wider">by Magniplex Logitech</span></span>
           </Link>
           <nav className="hidden md:flex items-center space-x-8 text-sm font-medium text-emerald-900/80">
             <a href="#what-we-do" className="hover:text-emerald-950 transition-colors">What We Do</a>
@@ -101,13 +101,13 @@ export default function HomePage() {
           <div className="lg:col-span-6 space-y-6">
             <div className="inline-flex items-center space-x-2 bg-emerald-50 border border-emerald-900/10 rounded-full px-3 py-1 text-emerald-900 text-xs font-semibold">
               <Sparkles className="h-3 w-3 text-emerald-700" />
-              <span>B2B Circular Economy Platform</span>
+              <span>B2B Circular Platform by Magniplex Logitech</span>
             </div>
             <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-emerald-950 leading-tight">
               Transforming Industrial Waste Into <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-700 to-teal-600">Sustainable Value</span>
             </h1>
             <p className="text-slate-600 text-lg sm:text-xl font-medium leading-relaxed">
-              End-to-end e-waste management, scrap recovery, refurbishment, repair services, spare parts recovery, and sustainability reporting for enterprises.
+              End-to-end e-waste management, scrap recovery, refurbishment, repair services, spare parts recovery, and sustainability reporting powered by <span className="text-emerald-950 font-bold">Magniplex Logitech</span>.
             </p>
             <div className="flex flex-col sm:flex-row items-center gap-4 pt-4">
               <Link
@@ -431,7 +431,7 @@ export default function HomePage() {
                 <Leaf className="h-8 w-8 text-emerald-400" />
                 <h3 className="text-2xl font-bold mt-6 leading-tight">Request a Waste Audit & Commercial Proposal</h3>
                 <p className="text-emerald-100/70 text-sm mt-3 leading-relaxed">
-                  Provide your organization details and material estimation. Our operations and compliance experts will arrange a site audit within 48 hours.
+                  Provide your organization details and material estimation. Magniplex Logitech's logistics and compliance experts will arrange a site audit within 48 hours.
                 </p>
               </div>
 
@@ -442,7 +442,7 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center space-x-3 text-emerald-100/95">
                   <Mail className="h-4 w-4 text-emerald-400" />
-                  <span>partnerships@revivex.co</span>
+                  <span>partnerships@magniplexlogitech.com</span>
                 </div>
                 <div className="flex items-center space-x-3 text-emerald-100/95">
                   <MapPin className="h-4 w-4 text-emerald-400" />
@@ -620,7 +620,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="max-w-7xl mx-auto px-6 border-t border-emerald-900/10 mt-8 pt-6 text-center text-xs">
-          <span>&copy; {new Date().getFullYear()} ReviveX Technologies Private Limited. All rights reserved.</span>
+          <span>&copy; {new Date().getFullYear()} Magniplex Logitech. All rights reserved. ReviveX is operated by Magniplex Logitech.</span>
         </div>
       </footer>
     </div>

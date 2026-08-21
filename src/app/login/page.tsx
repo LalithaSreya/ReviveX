@@ -144,7 +144,7 @@ export default function LoginPage() {
         <div className="flex flex-col items-center text-center space-y-2">
           <Link href="/" className="flex items-center space-x-2">
             <Leaf className="h-8 w-8 text-emerald-700" />
-            <span className="text-2xl font-extrabold tracking-tight text-emerald-950">Revive<span className="text-emerald-700">X</span></span>
+            <span className="text-2xl font-extrabold tracking-tight text-emerald-950">Revive<span className="text-emerald-700">X</span> <span className="text-[10px] text-slate-400 font-semibold align-middle uppercase tracking-widest block mt-0.5">by Magniplex Logitech</span></span>
           </Link>
           <h2 className="font-heading text-xl font-bold text-emerald-950">Sign in to your account</h2>
           <p className="text-xs text-slate-500">Access your B2B sustainability dashboard and tracking systems</p>
